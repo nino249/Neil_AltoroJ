@@ -11,9 +11,9 @@ jobs:
         uses: HCL-TECH-SOFTWARE/appscan-dast-action@v1.0.5
         with:
           baseurl: https://cloud.appscan.com
-          asoc_key: ${{secrets.ASOC_KEY}}
-          asoc_secret: ${{secrets.ASOC_SECRET}}
-          application_id: 5ef64671-56d8-4e52-a2a5-6c4f9902a486
+          asoc_key: ${{secrets.ASOC_EU_KEY}}
+          asoc_secret: ${{secrets.ASOC_EU_SECRET}}
+          application_id: ${{vars.ASOC_EU_ALTOROJ_GITHUB_NINO}}
           scan_type: 'staging'
           dynamic_scan_type: dast
           starting_URL: 'https://demo.testfire.net?mode=demo'
